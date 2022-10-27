@@ -1,0 +1,100 @@
+main {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+
+
+.login__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10%;
+
+    --border-raduis: 5px;
+    --primary-padding: 10px;
+}
+
+.login__content--left {
+    flex: 1 0 45%;
+}
+
+.login__content--left h1 {
+    color: var(--primary-blue);
+    font-size: 3.5rem;
+}
+
+.login__content--right>.form-container {
+    padding: var(--primary-padding);
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px var(--primary-gray);
+    border-radius: calc(var(--border-raduis) + 1px);
+    width: 100%;
+    flex: 1 0 45%;
+}
+
+.login__content--right>.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login__content--right>.form-container form input {
+    border: 1px solid var(--primary-gray);
+    border-radius: var(--border-raduis);
+    padding: var(--primary-padding);
+}
+
+.login__content--right>.form-container form input:focus {
+    outline: 1px solid var(--primary-blue);
+    box-shadow: 0px 0px 3px 0px var(--primary-blue);
+}
+
+
+.login__content--right>.form-container form button {
+    padding: var(--primary-padding);
+    border: 0;
+    border-radius: var(--border-raduis);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+}
+
+.login__content--right>.form-container form button:hover {
+    cursor: pointer;
+}
+
+.login__content--right>.form-container form button:first-of-type {
+    display: block;
+    background-color: var(--primary-blue);
+}
+
+
+.login__content--right>.form-container form a {
+    display: inline-block;
+    margin-inline: auto;
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
+.login__content--right>.form-container form a:hover {
+    text-decoration: underline;
+}
+
+.login__content--right>.form-container form div.hr-bar {
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid var(--primary-gray);
+}
+
+.login__content--right>.form-container form button:last-of-type {
+    background-color: #42B72A;
+}
+
+.login__content--right>.form-container form button:last-of-type:hover {
+    background-color: rgb(50, 172, 50);
+}
